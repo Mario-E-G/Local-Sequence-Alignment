@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Local Sequence Alignment</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Local Sequence Alignment</h1>
+    </div>
+
+    <form action="main.py" method="post" > 
+        <h2 class="formTitle">Enter First Protein Sequence</h2>
+        <textarea id="txt1" name="seq1" placeholder="Sequence...." required></textarea> <br>
+
+        <div class="first-content"  >
+            <input type="radio" class="seq" onclick="choiceCheck()" id="first-sequence" name="sequence1" value="2" >
+            <label class="labelseq1" for="sequence" >Sequence</label> 
+      
+            <input  type="radio" onclick="choiceCheck()" id="file1" name="sequence1" value="1"> 
+            <label class="labelfile1" for="file" >File</label>
+            <input id="btn1" class="btn" onmousedown="pad1()" onmouseover="Npad1()" onmouseup="Npad1()" onmouseout="pad1()" name="path" type="file" disabled>
+        </div>
+            
+        
+        
+    <!-- ----------------------------------------------------------------------------- -->
+
+        <h2 class="formTitle">Enter Second Protein Sequence</h2>
+        <textarea id="txt2" name="seq2" placeholder="Sequence...." required></textarea> <br>
+
+        <div class="second-content">
+        <input type="radio" class="seq" onclick="choiceCheck2()" id="second-sequence" name="sequence2" value="sequence" >
+        <label class="labelseq2" for="sequence" >Sequence</label>
+
+        <input type="radio" onclick="choiceCheck2()" id="file2" name="sequence2" value="File"> 
+        <label class="labelfile2" for="File">File</label>        
+
+        <input id="btn2" class="btn" onmousedown="pad2()" onmouseover="Npad2()" onmouseup="Npad2()" onmouseout="pad2()" type="file" disabled>
+        </div>
+        
+        <div class="gap-value">
+            <label class="labelgap" for="gap">Enter value for Gap</label> &nbsp;
+            <input type="number" name="gap" required>  
+        </div>
+       
+
+        <input type="submit" name="submit" id="submit" onmousedown="pad3()" onmouseup="Npad3()" value="Submit">
+
+        
+    </form>
+    <div class="result">
+    <!-- <input type="submit" name="submit" id="sub" onmousedown="pad3()" onmouseover="Npad3()" onmouseup="Npad3()" onmouseout="pad3()"> -->
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

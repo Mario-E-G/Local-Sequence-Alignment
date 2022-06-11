@@ -1,0 +1,241 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(0, 56, 50);
+    /* margin-bottom:20px ; */
+}
+h2{
+    margin: 15px;
+}
+textarea{
+    display: inline-flex;   
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 250px;
+    padding: 20px;
+    margin: 15px;
+    border: 3px solid #000;
+    font-size: 20px;
+    font-weight: 350;
+    color: black;
+    border-radius: 50px;
+    outline: none;
+    resize: none;
+    color: rgb(206, 200, 166);
+    text-transform: uppercase;
+}
+::placeholder {
+    color: rgb(206, 200, 166);;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+#btn1{
+    padding: 15px;
+    margin:0px 15px;
+    background-color: rgb(0, 56, 50);
+    border:3px solid #000;
+    border-radius: 500px;
+}
+#btn2{
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(0, 56, 50);
+    border: 3px solid #000;
+    border-radius: 500px;
+}
+#btn1:hover{
+    cursor: pointer;
+}
+#btn2:hover{
+    cursor: pointer;
+}
+.seq{
+    margin-left: 15px;
+}
+#submit{
+    padding: 15px 40px;
+    margin: 30px 15px 80px 15px;
+    background-color: rgb(185, 179, 143);
+    border: 1px solid #000;
+    border-radius: 500px;
+    font-size: 15px;
+    font-weight: 350;
+    width: 15%;
+}
+#sub{
+    padding: 15px 40px 15px 40px;
+    margin: 70px 15px 80px 15px;
+    background-color: rgb(185, 179, 143);
+    border: 1px solid #000;
+    border-radius: 500px;
+    font-size: 15px;
+    font-weight: 350;
+    width: 15%;
+}
+#submit:hover , #sub:hover{
+    cursor: pointer;
+}
+/* #sub{
+
+    left:42%;
+    padding: 15px 40px;
+    margin: 15px;
+    margin-top: 80px;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid #000;
+    font-size: 15px;
+    font-weight: 350;
+} */
+#divpy
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 56, 50);
+    color: rgb(206, 200, 166);;
+    font-size: 30px;
+}
+.title{
+    margin-top: 15px;
+    display: flex;
+    text-align: center;
+    border-radius: 500px;
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.title h1{
+    border: 3px solid rgb(185, 179, 143);
+    padding: 5px 15px;
+    border-radius: 500px;
+    background-color: rgb(0, 56, 50);
+    color: rgb(206, 200, 166);
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formTitle{
+    padding-top: 40px;
+    color: rgb(185, 179, 143);
+}
+.labelseq1{
+    font-weight: bold;
+    font-size: 25px;
+    color:rgb(185, 179, 143) ;
+}
+#first-sequence{
+    margin-right: 5px;
+    /* font-weight: bold;
+    font-size: 25px; */
+}
+.labelfile1{
+    font-weight: bold;
+    font-size: 25px;
+    color:rgb(185, 179, 143) ;
+}
+#file1{
+    margin-right: 5px;
+    margin-left: 200px;
+}
+#btn1{
+    font-weight: bold;
+    font-size: 15px;
+}
+.first-content{
+    display: flex;
+    align-items: center;
+}
+.labelseq2{
+    font-weight: bold;
+    font-size: 25px;
+        color:rgb(185, 179, 143) ;
+
+}
+#second-sequence{
+    margin-right: 5px;
+}
+.labelfile2{
+    font-weight: bold;
+    font-size: 25px;
+        color:rgb(185, 179, 143) ;
+
+}
+#file2{
+    margin-right: 5px;
+    margin-left: 200px;
+}
+#btn2{
+    font-weight: bold;
+    font-size: 15px;
+}
+.second-content{
+    display: flex;
+    align-items: center;
+}
+.gap-value{
+    margin: 20px 5px 5px;
+    margin-left: -280px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.gap-value input{
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    display: inline-block;
+    color: antiquewhite;
+    outline: none;
+}
+.labelgap{
+    color: rgb(185, 179, 143);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 56, 50); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 179, 143);; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+/*::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 56, 50);
+}*/
+ 
+  th, td {
+    border: 1px solid black;
+    padding: 5;
+    border-radius: 8px;
+    text-align: center;
+    color: #000;
+    background-color: #96D4D4;
+    width:30px;
+  }
+  
+  
